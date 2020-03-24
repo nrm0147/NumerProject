@@ -10,6 +10,8 @@ import Secant from './Component/Secant';
 import Newton from './Component/Newton';
 import Trapezoidal from './Component/Trapezoidal';
 import TrapezoidalSingle from './Component/TrapezoidalSingle';
+import Simpson1 from './Component/Simpson1';
+import Simpson3 from './Component/Simpson3';
 import Inverse from './Component/Inverse';
 import Odeeuler from './Component/Odeeuler';
 import Gaussquadrature from './Component/Gaussquadrature';
@@ -31,6 +33,8 @@ ReactDOM.render(
         <Route exact path="/Secant" component={Secant} />
         <Route exact path="/Newton" component={Newton}/>
         <Route exact path="/Trapezoidal" component={Trapezoidal}/>
+        <Route exact path="/Simpson1" component={Simpson1}/>
+        <Route exact path="/Simpson3" component={Simpson3}/>
         <Route exact path="/TrapezoidalSingle" component={TrapezoidalSingle}/>
         <Route exact path="/Inverse" component={Inverse}/>
         <Route exact path="/Odeeuler" component={Odeeuler} />
