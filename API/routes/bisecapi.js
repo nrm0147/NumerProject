@@ -36,6 +36,7 @@ router.post('/bisecapi', (req, res) => {
                 xl = xm;
             }
             error = math.abs((xm - xo) / xm) * 100;
+            xo = xm;
             result1.push({
                 'iteration': i,
                 'xl': xl,
@@ -43,7 +44,6 @@ router.post('/bisecapi', (req, res) => {
                 'xm': xm,
                 'Error': error,
             });
-            xo = xm;
             i++;
             console.log(error)
         } while (error > 0.000001);
